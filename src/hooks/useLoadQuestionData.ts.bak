@@ -1,0 +1,21 @@
+/*
+ * @Author: zgl
+ * @Description: TODO
+ */
+import { useParams } from 'react-router-dom'
+import { getQuestionService } from '../services/question'
+import { useRequest } from 'ahooks'
+
+function useLoadQuestionData() {
+  const { id = '' } = useParams()
+
+  function getQuestion() {
+    return getQuestionService(id)
+  }
+
+  const { data, error, loading } = useRequest(getQuestion)
+
+  return { data, error, loading }
+}
+
+export default useLoadQuestionData

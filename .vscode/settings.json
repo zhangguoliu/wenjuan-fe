@@ -1,0 +1,20 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.words": [
+    "ahooks",
+    "antd",
+    "Appstore",
+    "clonedeep",
+    "commitlint",
+    "craco",
+    "downarrow",
+    "immer",
+    "mockjs",
+    "Popconfirm",
+    "reduxjs",
+    "undoable",
+    "uparrow"
+  ]
+}
